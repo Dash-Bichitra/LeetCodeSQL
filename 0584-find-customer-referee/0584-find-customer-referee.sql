@@ -1,5 +1,5 @@
 /* Write your T-SQL query statement below */
-select name
-from Customer
-where  referee_id is null 
-    or referee_id != 2
+SELECT name
+FROM Customer
+WHERE NOT  referee_id = 2
+    or referee_id IS NULL
